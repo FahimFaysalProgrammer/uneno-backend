@@ -39,7 +39,7 @@ class CategoryViewset(viewsets.ModelViewSet):
 
 # Pagination:
 class ProductPagination(pagination.PageNumberPagination):
-    page_size = 1 # items per page
+    page_size = 12 # items per page
     page_size_query_param = page_size
     max_page_size = 100
 
