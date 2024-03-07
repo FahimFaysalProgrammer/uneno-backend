@@ -30,7 +30,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 CSRF_TRUSTED_ORIGINS = ['https://uneno.onrender.com','https://*.127.0.0.1']
-CORS_ALLOWED_ORIGINS = ["*"]
+CORS_ALLOWED_ORIGINS = ['http://*', 'https://*']
 
 
 # Application definition
