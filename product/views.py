@@ -49,7 +49,7 @@ class ProductViewset(viewsets.ModelViewSet):
     serializer_class = serializers.ProductSerializer
     filter_backends = [filters.SearchFilter]
     pagination_class = ProductPagination
-    search_fields = ['user__first_name', 'user__email', 'designation__name', 'specialization__name']
+    search_fields = ['title', 'category__name', 'size__name', 'color__name']
     
     
 class ReviewViewset(viewsets.ModelViewSet):
