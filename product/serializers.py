@@ -5,7 +5,7 @@ class ProductSerializer(serializers.ModelSerializer):
     user = serializers.StringRelatedField(many=False)
     size = serializers.StringRelatedField(many=True)
     color = serializers.StringRelatedField(many=True)
-    category = serializers.StringRelatedField(many=True)
+    category = serializers.StringRelatedField(many=False)
     class Meta:
         model =  models.Product
         fields = '__all__'
@@ -26,6 +26,8 @@ class CategorySerializer(serializers.ModelSerializer):
         fields = '__all__'
         
 class ReviewSerializer(serializers.ModelSerializer):
+    reviewer = serializers.StringRelatedField(many=False)
+    product = serializers.StringRelatedField(many=False)
     class Meta:
         model =  models.Review
         fields = '__all__'
