@@ -5,7 +5,7 @@ class ProductSerializer(serializers.ModelSerializer):
     user = serializers.StringRelatedField(many=False)
     size = serializers.StringRelatedField(many=True)
     color = serializers.StringRelatedField(many=True)
-    category = serializers.StringRelatedField(many=False)
+    category = serializers.StringRelatedField(many=True)
     class Meta:
         model =  models.Product
         fields = '__all__'
