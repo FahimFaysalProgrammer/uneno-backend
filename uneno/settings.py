@@ -29,8 +29,8 @@ SECRET_KEY = 'django-insecure-3gni%vd_1&oq%a-$m*(1a8nwz!zo@+03+(%i)ici)9tede)51i
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = ['https://uneno.onrender.com','https://*.127.0.0.1', 'http://127.0.0.1:8000']
-CORS_ALLOWED_ORIGINS = ['http://*', 'https://*', 'http://127.0.0.1:5500', 'http://127.0.0.1:8000']
+CSRF_TRUSTED_ORIGINS = ['https://uneno.onrender.com','https://*.127.0.0.1', 'http://127.0.0.1:8000', 'https://fahimfaysalprogrammer.github.io']
+CORS_ALLOWED_ORIGINS = ['http://*', 'https://*', 'http://127.0.0.1:5500', 'http://127.0.0.1:8000', 'https://fahimfaysalprogrammer.github.io']
 
 
 # Application definition
